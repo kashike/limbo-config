@@ -14,7 +14,7 @@
         ],
         "who": "author",
         "type": "apply when found",
-        "pattern": "\\+wip",
+        "pattern": "~wip",
         "apply": {
           "label": {
             "add": "status: wip",
@@ -33,7 +33,7 @@
         ],
         "who": "author",
         "type": "apply when found",
-        "pattern": "\\+qa",
+        "pattern": "~qa",
         "apply": {
           "label": {
             "add": [
@@ -51,7 +51,7 @@
         "on": "issue comment",
         "who": "collaborator",
         "type": "apply when found",
-        "pattern": "\\+tested",
+        "pattern": "~tested",
         "apply": {
           "label": {
             "remove": [
@@ -65,7 +65,7 @@
         "on": "issue comment",
         "who": "collaborator",
         "type": "apply when found",
-        "pattern": "\\+reviewed",
+        "pattern": "~reviewed",
         "apply": {
           "label": {
             "remove": [
@@ -79,7 +79,7 @@
         "on": "issue comment",
         "who": "collaborator",
         "type": "apply when found",
-        "pattern": "\\+ready",
+        "pattern": "~ready",
         "apply": {
           "label": {
             "add": "status: ready to merge",
