@@ -9,8 +9,8 @@
     "actions": [
       {
         "on": [
-          "issue comment",
-          "issue open"
+          "pull request comment",
+          "pull request open"
         ],
         "who": "author",
         "type": "apply when found",
@@ -28,8 +28,8 @@
       },
       {
         "on": [
-          "issue comment",
-          "issue open"
+          "pull request comment",
+          "pull request open"
         ],
         "who": "author",
         "type": "apply when found",
@@ -48,7 +48,7 @@
         }
       },
       {
-        "on": "issue comment",
+        "on": "pull request comment",
         "who": "collaborator",
         "type": "apply when found",
         "pattern": "~tested",
@@ -62,7 +62,7 @@
         }
       },
       {
-        "on": "issue comment",
+        "on": "pull request comment",
         "who": "collaborator",
         "type": "apply when found",
         "pattern": "~reviewed",
@@ -76,7 +76,7 @@
         }
       },
       {
-        "on": "issue comment",
+        "on": "pull request comment",
         "who": "collaborator",
         "type": "apply when found",
         "pattern": "~ready",
