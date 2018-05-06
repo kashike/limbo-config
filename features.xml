@@ -49,7 +49,7 @@
 
   <discord>
     <github-issue-ref>
-      <search pattern="([a-zA-Z0-9]{0,})-([0-9]{0,})">
+      <search pattern="~([a-zA-Z0-9]{1,})-([0-9]{1,})">
         <repositories>
           <repository ref="sponge-api"/>
           <repository ref="sponge-common"/>
