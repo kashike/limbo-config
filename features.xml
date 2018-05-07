@@ -5,18 +5,27 @@
       <repository id="sponge-api" repo="SpongeAPI">
         <tag>api</tag>
         <tag>sa</tag>
+        <tag>spongeapi</tag>
       </repository>
       <repository id="sponge-common" repo="SpongeCommon">
         <tag>common</tag>
         <tag>sc</tag>
+        <tag>spongecommon</tag>
+      </repository>
+      <repository id="sponge-docs" repo="SpongeDocs">
+        <tag>docs</tag>
+        <tag>sd</tag>
+        <tag>spongedocs</tag>
       </repository>
       <repository id="sponge-forge" repo="SpongeForge">
         <tag>forge</tag>
         <tag>sf</tag>
+        <tag>spongeforge</tag>
       </repository>
       <repository id="sponge-vanilla" repo="SpongeVanilla">
         <tag>vanilla</tag>
         <tag>sv</tag>
+        <tag>spongevanilla</tag>
       </repository>
     </repositories>
   </repositories>
@@ -53,6 +62,7 @@
         <repositories>
           <repository ref="sponge-api"/>
           <repository ref="sponge-common"/>
+          <repository ref="sponge-docs"/>
           <repository ref="sponge-forge"/>
           <repository ref="sponge-vanilla"/>
         </repositories>
