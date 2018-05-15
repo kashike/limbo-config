@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <filters>
+    <!-- create filters for repositories -->
+    <repository id="spongeapi" ref="spongeapi"/>
+    <repository id="spongecommon" ref="spongecommon"/>
+    <repository id="spongeforge" ref="spongeforge"/>
+    <repository id="spongevanilla" ref="spongevanilla"/>
+
+    <!-- pull request comment/open by author/collaborator-->
+    <all id="pr-co-ac">
+      <any>
+        <actor>author</actor>
+        <actor>collaborator</actor>
+      </any>
+      <any>
+        <event>pull request comment</event>
+        <event>pull request open</event>
+      </any>
+    </all>
+
+    <!-- pull request comment by collaborator-->
+    <all id="pr-c-c">
+      <actor>collaborator</actor>
+      <event>pull request comment</event>
+    </all>
+  </filters>
+</limbo>

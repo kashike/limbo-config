@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <discord>
+    <github-issue-ref>
+      <search pattern="~([a-zA-Z0-9]{1,})-([0-9]{1,})">
+        <repositories>
+          <repository ref="spongeapi"/>
+          <repository ref="spongecommon"/>
+          <repository ref="spongedocs"/>
+          <repository ref="spongeforge"/>
+          <repository ref="spongevanilla"/>
+        </repositories>
+      </search>
+
+      <state>
+        <open>
+          <message>
+            <embed color="#58c858">
+              <title>${tag}-${number}: ${title}</title>
+              <url>${url}</url>
+              <description>**State**: open</description>
+            </embed>
+          </message>
+        </open>
+
+        <closed>
+          <message>
+            <embed color="#c85858">
+              <title>${tag}-${number}: ${title}</title>
+              <url>${url}</url>
+              <description>**State**: closed</description>
+            </embed>
+          </message>
+        </closed>
+
+        <merged>
+          <message>
+            <embed color="#9058c8">
+              <title>${tag}-${number}: ${title}</title>
+              <url>${url}</url>
+              <description>**State**: merged</description>
+            </embed>
+          </message>
+        </merged>
+      </state>
+    </github-issue-ref>
+  </discord>
+</limbo>

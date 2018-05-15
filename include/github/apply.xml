@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <github>
+    <apply>
+      <apply>
+        <filter>
+          <any>
+            <filter id="spongeapi"/>
+            <filter id="spongecommon"/>
+            <filter id="spongeforge"/>
+            <filter id="spongevanilla"/>
+          </any>
+        </filter>
+
+        <actions>
+          <pattern type="find" pattern="~wip">
+            <filter id="pr-co-ac"/>
+
+            <action>
+              <label>
+                <add>status: wip</add>
+                <remove>status: needs review</remove>
+                <remove>status: needs testing</remove>
+                <remove>status: ready to merge</remove>
+              </label>
+            </action>
+          </pattern>
+
+          <pattern type="find" pattern="~qa">
+            <filter id="pr-co-ac"/>
+
+            <action>
+              <label>
+                <add>status: needs review</add>
+                <add>status: needs testing</add>
+                <remove>status: ready to merge</remove>
+                <remove>status: wip</remove>
+              </label>
+            </action>
+          </pattern>
+
+          <pattern type="find" pattern="~tested">
+            <filter id="pr-c-c"/>
+
+            <action>
+              <label>
+                <remove>status: needs testing</remove>
+                <remove>status: wip</remove>
+              </label>
+            </action>
+          </pattern>
+
+          <pattern type="find" pattern="~reviewed">
+            <filter id="pr-c-c"/>
+
+            <action>
+              <label>
+                <remove>status: needs review</remove>
+                <remove>status: wip</remove>
+              </label>
+            </action>
+          </pattern>
+
+          <pattern type="find" pattern="~ready">
+            <filter id="pr-c-c"/>
+
+            <action>
+              <label>
+                <add>status: ready to merge</add>
+                <remove>status: needs testing</remove>
+                <remove>status: needs review</remove>
+                <remove>status: wip</remove>
+              </label>
+            </action>
+          </pattern>
+        </actions>
+      </apply>
+    </apply>
+  </github>
+</limbo>
