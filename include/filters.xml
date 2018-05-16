@@ -24,5 +24,20 @@
       <actor>collaborator</actor>
       <event>pull request comment</event>
     </all>
+
+    <!-- new issue-->
+    <event id="is-o">issue open</event>
+
+    <!-- self (bot) actor -->
+    <actor id="is-self">self</actor>
+    <not id="not-self">
+      <filter id="is-self"/>
+    </not>
+
+    <!-- issue open by anyone but self -->
+    <all id="is-o-ns">
+      <filter id="is-o"/>
+      <filter id="not-self"/>
+    </all>
   </filters>
 </limbo>
