@@ -14,7 +14,7 @@
 
         <actions>
           <!-- all new issues require triage -->
-          <pattern type="find" pattern=".*">
+          <normal>
             <filter id="is-o-ns"/>
 
             <action>
@@ -22,7 +22,7 @@
                 <add>status: needs triage</add>
               </label>
             </action>
-          </pattern>
+          </normal>
 
           <pattern type="find" pattern="~wip">
             <filter id="pr-co-ac"/>
