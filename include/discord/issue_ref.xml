@@ -4,11 +4,11 @@
     <github-issue-ref>
       <search pattern="~([a-zA-Z0-9]{1,})-([0-9]{1,})">
         <repositories>
-          <repository ref="spongeapi"/>
-          <repository ref="spongecommon"/>
-          <repository ref="spongedocs"/>
-          <repository ref="spongeforge"/>
-          <repository ref="spongevanilla"/>
+          <repository id="spongeapi"/>
+          <repository id="spongeapi"/>
+          <repository id="spongedocs"/>
+          <repository id="spongeforge"/>
+          <repository id="spongevanilla"/>
         </repositories>
       </search>
 

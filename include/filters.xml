@@ -2,10 +2,18 @@
 <limbo>
   <filters>
     <!-- create filters for repositories -->
-    <repository id="spongeapi" ref="spongeapi"/>
-    <repository id="spongecommon" ref="spongecommon"/>
-    <repository id="spongeforge" ref="spongeforge"/>
-    <repository id="spongevanilla" ref="spongevanilla"/>
+    <repository id="spongeapi">
+      <ref id="spongeapi"/>
+    </repository>
+    <repository id="spongecommon">
+      <ref id="spongecommon"/>
+    </repository>
+    <repository id="spongeforge">
+      <ref id="spongeforge"/>
+    </repository>
+    <repository id="spongevanilla">
+      <ref id="spongevanilla"/>
+    </repository>
 
     <!-- pull request comment/open by author/collaborator-->
     <all id="pr-co-ac">
@@ -31,13 +39,13 @@
     <!-- self (bot) actor -->
     <actor id="is-self">self</actor>
     <not id="not-self">
-      <filter id="is-self"/>
+      <ref id="is-self"/>
     </not>
 
     <!-- issue open by anyone but self -->
     <all id="is-o-ns">
-      <filter id="is-o"/>
-      <filter id="not-self"/>
+      <ref id="is-o"/>
+      <ref id="not-self"/>
     </all>
   </filters>
 </limbo>

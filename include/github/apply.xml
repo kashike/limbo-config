@@ -5,10 +5,10 @@
       <apply>
         <filter>
           <any>
-            <filter id="spongeapi"/>
-            <filter id="spongecommon"/>
-            <filter id="spongeforge"/>
-            <filter id="spongevanilla"/>
+            <ref id="spongeapi"/>
+            <ref id="spongecommon"/>
+            <ref id="spongeforge"/>
+            <ref id="spongevanilla"/>
           </any>
         </filter>
 
