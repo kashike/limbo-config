@@ -24,6 +24,25 @@
             </action>
           </normal>
 
+          <!-- assume that the person who has added labels has triaged -->
+          <normal>
+            <filter>
+              <all>
+                <filter id="not-self"/>
+                <any>
+                  <event>issue label</event>
+                  <event>pull request label</event>
+                </any>
+              </all>
+            </filter>
+
+            <action>
+              <label>
+                <remove>status: needs triage</remove>
+              </label>
+            </action>
+          </normal>
+
           <pattern type="find" pattern="~wip">
             <filter id="pr-co-ac"/>
 
