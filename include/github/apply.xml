@@ -97,6 +97,17 @@
                 </apply>
               </match>
             </where>
+            <where group="3">
+              <match>
+                <value>8.0.0-BETA</value>
+
+                <apply>
+                  <label>
+                    <add>branch: bleeding</add>
+                  </label>
+                </apply>
+              </match>
+            </where>
           </pattern>
 
           <pattern type="find" pattern="~wip">
