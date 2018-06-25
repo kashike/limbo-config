@@ -43,6 +43,62 @@
             </action>
           </normal>
 
+          <!-- search for a version -->
+          <pattern type="where" pattern="(?:(\d+\.\d+(?:\.\d+))-)(\d+)?-?(\d+\.\d+(?:\.\d+)?(?:-[A-Z]*))-?(\d+)">
+            <filter id="is-o-ns"/>
+
+            <where group="1">
+              <match>
+                <value>1.10</value>
+                <value>1.10.2</value>
+
+                <apply close="true">
+                  <comment src="auto_close_unsupported_version.md">
+                    <tokens>
+                      <token name="version" value="1.10"/>
+                      <token name="version_ended" value="in January 2018"/>
+                    </tokens>
+                  </comment>
+                  <label>
+                    <add>resolution: unsupported</add>
+                    <remove>status: needs triage</remove>
+                    <add>version: 1.10 (u)</add>
+                  </label>
+                </apply>
+              </match>
+
+              <match>
+                <value>1.11</value>
+                <value>1.11.2</value>
+
+                <apply close="true">
+                  <comment src="auto_close_unsupported_version.md">
+                    <tokens>
+                      <token name="version" value="1.11"/>
+                      <token name="version_ended" value="in January 2018"/>
+                    </tokens>
+                  </comment>
+                  <label>
+                    <add>resolution: unsupported</add>
+                    <remove>status: needs triage</remove>
+                    <add>version: 1.11 (u)</add>
+                  </label>
+                </apply>
+              </match>
+
+              <match>
+                <value>1.12</value>
+                <value>1.12.2</value>
+
+                <apply>
+                  <label>
+                    <add>version: 1.12</add>
+                  </label>
+                </apply>
+              </match>
+            </where>
+          </pattern>
+
           <pattern type="find" pattern="~wip">
             <filter id="pr-co-ac"/>
 
