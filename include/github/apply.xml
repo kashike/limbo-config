@@ -27,13 +27,23 @@
           <!-- assume that the person who has added labels has triaged -->
           <normal>
             <filter>
-              <all>
-                <filter id="not-self"/>
-                <any>
-                  <event>issue label</event>
-                  <event>pull request label</event>
-                </any>
-              </all>
+              <any>
+                <!-- auto-remove the triage label when someone, other than the bot, applies labels -->
+                <all>
+                  <filter id="not-self"/>
+                  <any>
+                    <event>issue label</event>
+                    <event>pull request label</event>
+                  </any>
+                </all>
+                <!-- auto-remove the triage label when a close happens -->
+                <all>
+                  <any>
+                    <event>issue close</event>
+                    <event>pull request close</event>
+                  </any>
+                </all>
+              </any>
             </filter>
 
             <action>
