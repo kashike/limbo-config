@@ -6,6 +6,7 @@
         <source repository="spongeapi" action="is-move-source"/>
 
         <targets action="is-move-target">
+          <target repository="configurate"/>
           <target repository="spongecommon"/>
           <target repository="spongeforge"/>
           <target repository="spongevanilla"/>
@@ -16,6 +17,7 @@
         <source repository="spongecommon" action="is-move-source"/>
 
         <targets action="is-move-target">
+          <target repository="configurate"/>
           <target repository="spongeapi"/>
           <target repository="spongeforge"/>
           <target repository="spongevanilla"/>
@@ -26,6 +28,7 @@
         <source repository="spongeforge" action="is-move-source"/>
 
         <targets action="is-move-target">
+          <target repository="configurate"/>
           <target repository="spongeapi"/>
           <target repository="spongecommon"/>
           <target repository="spongevanilla"/>
@@ -36,6 +39,7 @@
         <source repository="spongevanilla" action="is-move-source"/>
 
         <targets action="is-move-target">
+          <target repository="configurate"/>
           <target repository="spongeapi"/>
           <target repository="spongecommon"/>
           <target repository="spongeforge"/>
