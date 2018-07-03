@@ -63,7 +63,7 @@
                 <value>1.10.2</value>
 
                 <apply close="true">
-                  <comment src="auto_close_unsupported_version.md">
+                  <comment src="issue/close/unsupported_version.md">
                     <tokens>
                       <token name="version" value="1.10"/>
                       <token name="version_end" value="in January 2018"/>
@@ -82,7 +82,7 @@
                 <value>1.11.2</value>
 
                 <apply close="true">
-                  <comment src="auto_close_unsupported_version.md">
+                  <comment src="issue/close/unsupported_version.md">
                     <tokens>
                       <token name="version" value="1.11"/>
                       <token name="version_end" value="in January 2018"/>

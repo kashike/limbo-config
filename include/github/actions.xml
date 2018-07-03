@@ -4,7 +4,7 @@
     <actions>
       <!-- issue move source -->
       <action id="is-move-source" close="true">
-        <comment src="issue_move_source.md"/>
+        <comment src="issue/move/source.md"/>
         <label>
           <add>resolution: moved</add>
         </label>
@@ -12,7 +12,7 @@
 
       <!-- issue move target -->
       <action id="is-move-target">
-        <comment src="issue_move_target.md"/>
+        <comment src="issue/move/target.md"/>
       </action>
     </actions>
   </github>
