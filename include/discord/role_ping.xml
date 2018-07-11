@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <discord>
+    <role-pings pattern="~ping ([a-z-]*) (.*)">
+      <role-ping>
+        <id>staff</id>
+
+        <filter>
+          <role>142773577261776896</role> <!-- Staff -->
+        </filter>
+
+        <role>142773577261776896</role> <!-- Staff -->
+
+        <action>
+          <message>
+            <content>${role} (via ${source}): ${message}</content>
+          </message>
+        </action>
+      </role-ping>
+
+      <role-ping>
+        <id>developer</id>
+        <id>developers</id>
+
+        <filter>
+          <role>142773577261776896</role> <!-- Staff -->
+        </filter>
+
+        <role>197386163189710848</role> <!-- Developer -->
+
+        <action>
+          <message>
+            <content>${role} (via ${source}): ${message}</content>
+          </message>
+        </action>
+      </role-ping>
+
+      <role-ping>
+        <id>ore-reviewer</id>
+        <id>ore-reviewers</id>
+
+        <filter>
+          <role>142773577261776896</role> <!-- Staff -->
+        </filter>
+
+        <role>406282450927484929</role> <!-- Ore Reviewer -->
+
+        <action>
+          <message>
+            <content>${role} (via ${source}): ${message}</content>
+          </message>
+        </action>
+      </role-ping>
+    </role-pings>
+  </discord>
+</limbo>
