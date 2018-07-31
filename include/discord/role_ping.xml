@@ -36,6 +36,22 @@
       </role-ping>
 
       <role-ping>
+        <id>ore</id>
+
+        <filter>
+          <role>142773577261776896</role> <!-- Staff -->
+        </filter>
+
+        <role>473820923045085214</role> <!-- Ore -->
+
+        <action>
+          <message>
+            <content>${role} (via ${source}): ${message}</content>
+          </message>
+        </action>
+      </role-ping>
+
+      <role-ping>
         <id>ore-developer</id>
         <id>ore-developers</id>
 
