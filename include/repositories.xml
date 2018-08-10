@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <limbo>
   <repositories>
+    <repositories user="PaperMC">
+      <repository id="paper" repo="Paper">
+        <tag>paper</tag>
+      </repository>
+    </repositories>
     <repositories user="SpongePowered">
       <repository id="configurate" repo="configurate">
         <tag>configurate</tag>
