@@ -36,8 +36,8 @@
       <event>pull request comment</event>
     </all>
 
-    <!-- new issue-->
     <event id="is-o">issue open</event>
+    <event id="pr-o">pull request open</event>
 
     <!-- self (bot) actor -->
     <actor id="is-self">self</actor>
@@ -48,6 +48,11 @@
     <!-- issue open by anyone but self -->
     <all id="is-o-ns">
       <ref id="is-o"/>
+      <ref id="not-self"/>
+    </all>
+    <!-- pull request open by anyone but self -->
+    <all id="pr-o-ns">
+      <ref id="pr-o"/>
       <ref id="not-self"/>
     </all>
   </filters>

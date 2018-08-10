@@ -52,6 +52,17 @@
             </action>
           </trigger>
 
+          <!-- automatically apply the 'status: wip' label if '[wip]' is detected at the beginning of the title -->
+          <pattern type="find" pattern="\[wip\]" scope="title">
+            <filter id="pr-o-ns"/>
+
+            <action>
+              <label>
+                <add>status: wip</add>
+              </label>
+            </action>
+          </pattern>
+
           <!-- search for a version -->
           <pattern type="where" pattern="(?:(\d+\.\d+(?:\.\d+))-)(\d+)?-?(\d+\.\d+(?:\.\d+)?(?:-[A-Z]*))-?(\d+)">
             <filter id="is-o-ns"/>
