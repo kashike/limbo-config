@@ -36,6 +36,23 @@
       </role-ping>
 
       <role-ping>
+        <id>sysadmin</id>
+        <id>sysadmins</id>
+
+        <filter>
+          <role>142773577261776896</role> <!-- Staff -->
+        </filter>
+
+        <role>466777798862700564</role> <!-- Sigma 9 -->
+
+        <action>
+          <message>
+            <content>${role} (via ${source}): ${message}</content>
+          </message>
+        </action>
+      </role-ping>
+
+      <role-ping>
         <id>ore</id>
 
         <filter>
