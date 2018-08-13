@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <limbo>
   <discord>
-    <role-pings pattern="~ping ([a-z-]*) (.*)">
+    <role-pings pattern="~ping ([a-z-]*) ((?s).*[\n\r].*)">
       <role-ping>
         <id>staff</id>
 
