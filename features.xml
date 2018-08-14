@@ -5,6 +5,7 @@
 
   <include src="discord/issue_ref.xml"/>
   <include src="discord/role_ping.xml"/>
+  <include src="discord/role_react.xml"/>
 
   <include src="github/actions.xml"/>
   <include src="github/apply.xml"/>
