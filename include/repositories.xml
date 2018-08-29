@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <limbo>
   <repositories>
+    <repositories user="ModCoderPack">
+      <repository id="mcpbot-issues" repo="MCPBot-Issues">
+        <tag>mcpbot-issues</tag>
+        <tag>mcpbi</tag>
+        <tag>mappings</tag>
+      </repository>
+    </repositories>
     <repositories user="PaperMC">
       <repository id="paper" repo="Paper">
         <tag>paper</tag>
