@@ -128,7 +128,7 @@
                   <comment src="issue/experimental.md">
                     <tokens>
                       <token name="version" value="8.0.0-BETA"/>
-                      <token name="stable" value="7"/>
+                      <token name="stable" value="7.x"/>
                     </tokens>
                   </comment>
                 </apply>
