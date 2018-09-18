@@ -5,6 +5,9 @@
     <repository id="mcpbot-issues">
       <ref id="mcpbot-issues"/>
     </repository>
+    <repository id="ore">
+      <ref id="ore"/>
+    </repository>
     <repository id="paper">
       <ref id="paper"/>
     </repository>

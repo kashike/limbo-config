@@ -4,6 +4,24 @@
     <apply>
       <apply>
         <filter>
+          <ref id="ore"/>
+        </filter>
+
+        <actions>
+          <!-- all new issues require triage -->
+          <trigger>
+            <filter id="pr-o-ns"/>
+
+            <action>
+              <label>
+                <add>status: in progress</add>
+              </label>
+            </action>
+          </trigger>
+        </actions>
+      </apply>
+      <apply>
+        <filter>
           <any>
             <ref id="spongeapi"/>
             <ref id="spongecommon"/>
