@@ -5,6 +5,9 @@
       <role-react message="478947037979869186" emoji="467460856171593729">
         <role>478931369993437184</role> <!-- Release Candidate -->
       </role-react>
+      <role-react message="498927566162231296" emoji="498928461696729088">
+        <role>498927132370796545</role> <!-- snowman -->
+      </role-react>
     </role-reacts>
   </discord>
 </limbo>
