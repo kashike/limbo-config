@@ -3,6 +3,7 @@
   <include src="filters.xml"/>
   <include src="repositories.xml"/>
 
+  <include src="discord/auto_role.xml"/>
   <include src="discord/issue_ref.xml"/>
   <include src="discord/role_ping.xml"/>
   <include src="discord/role_react.xml"/>

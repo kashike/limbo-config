@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <discord>
+    <auto-roles>
+      <auto-role>
+        <guild>289587909051416579</guild> <!-- PaperMC -->
+        <user>273258543132442624</user> <!-- Spottedleaf#0878 -->
+        <role>497836299097473039</role> <!-- no-reactions -->
+        <role>505873650067570688</role> <!-- 🔥 -->
+      </auto-role>
+    </auto-roles>
+  </discord>
+</limbo>
