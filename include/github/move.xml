@@ -45,6 +45,17 @@
           <target repository="spongeforge"/>
         </targets>
       </move>
+
+      <move>
+        <source repository="ore" action="is-move-source"/>
+
+        <targets action="is-move-target">
+          <target repository="spongeapi"/>
+          <target repository="spongecommon"/>
+          <target repository="spongeforge"/>
+          <target repository="spongevanilla"/>
+        </targets>
+      </move>
     </move>
   </github>
 </limbo>
