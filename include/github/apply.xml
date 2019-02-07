@@ -52,6 +52,9 @@
                     <event>issue label</event>
                     <event>pull request label</event>
                   </any>
+                  <not>
+                    <label context="new">status: needs triage</label>
+                  </not>
                 </all>
                 <!-- auto-remove the triage label when a close happens -->
                 <all>
