@@ -24,8 +24,8 @@
       <ref id="spongevanilla"/>
     </repository>
 
-    <!-- pull request comment/open by author/collaborator-->
-    <all id="pr-co-ac">
+    <!-- pull request comment/open/review by author/collaborator-->
+    <all id="pr-cor-ac">
       <any>
         <actor>author</actor>
         <actor>collaborator</actor>
@@ -33,13 +33,17 @@
       <any>
         <event>pull request comment</event>
         <event>pull request open</event>
+        <event>pull request review submitted</event>
       </any>
     </all>
 
-    <!-- pull request comment by collaborator-->
-    <all id="pr-c-c">
+    <!-- pull request comment/review by collaborator-->
+    <all id="pr-cr-c">
       <actor>collaborator</actor>
-      <event>pull request comment</event>
+      <any>
+        <event>pull request comment</event>
+        <event>pull request review submitted</event>
+      </any>
     </all>
 
     <event id="is-o">issue open</event>

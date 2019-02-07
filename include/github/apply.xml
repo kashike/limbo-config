@@ -152,7 +152,7 @@
           </pattern>
 
           <command command="~wip">
-            <filter id="pr-co-ac"/>
+            <filter id="pr-cor-ac"/>
 
             <action>
               <label>
@@ -165,7 +165,7 @@
           </command>
 
           <command command="~qa">
-            <filter id="pr-co-ac"/>
+            <filter id="pr-cor-ac"/>
 
             <action>
               <label>
@@ -178,7 +178,7 @@
           </command>
 
           <command command="~tested">
-            <filter id="pr-c-c"/>
+            <filter id="pr-cr-c"/>
 
             <action>
               <label>
@@ -189,7 +189,7 @@
           </command>
 
           <command command="~reviewed">
-            <filter id="pr-c-c"/>
+            <filter id="pr-cr-c"/>
 
             <action>
               <label>
@@ -200,7 +200,7 @@
           </command>
 
           <command command="~ready">
-            <filter id="pr-c-c"/>
+            <filter id="pr-cr-c"/>
 
             <action>
               <label>
