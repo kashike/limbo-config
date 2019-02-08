@@ -34,6 +34,21 @@
           </message>
         </action>
       </role-ping>
+      <role-ping>
+        <id>update</id>
+
+        <filter>
+          <role>543515204055728158</role> <!-- up -->
+        </filter>
+
+        <role>142773577261776896</role> <!-- Staff -->
+
+        <action>
+          <message>
+            <content>${role} (via ${source}): ${message}</content>
+          </message>
+        </action>
+      </role-ping>
 
       <role-ping>
         <id>sysadmin</id>
