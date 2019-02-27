@@ -20,7 +20,10 @@
             <embed color="#58c858">
               <title>${tag}-${number}: ${title}</title>
               <url>${url}</url>
-              <description>**State**: open</description>
+              <description>${body}</description>
+              <footer>
+                <text>State: open | Author: ${author}</text>
+              </footer>
             </embed>
           </message>
         </open>
@@ -30,7 +33,10 @@
             <embed color="#c85858">
               <title>${tag}-${number}: ${title}</title>
               <url>${url}</url>
-              <description>**State**: closed</description>
+              <description>${body}</description>
+              <footer>
+                <text>State: closed | Author: ${author}</text>
+              </footer>
             </embed>
           </message>
         </closed>
@@ -40,7 +46,10 @@
             <embed color="#9058c8">
               <title>${tag}-${number}: ${title}</title>
               <url>${url}</url>
-              <description>**State**: merged</description>
+              <description>${body}</description>
+              <footer>
+                <text>State: merged | Author: ${author}</text>
+              </footer>
             </embed>
           </message>
         </merged>
