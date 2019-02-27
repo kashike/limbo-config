@@ -7,7 +7,7 @@
           <repository id="mcpbot-issues"/>
           <repository id="paper"/>
           <repository id="spongeapi"/>
-          <repository id="spongeapi"/>
+          <repository id="spongecommon"/>
           <repository id="spongedocs"/>
           <repository id="spongeforge"/>
           <repository id="spongevanilla"/>
