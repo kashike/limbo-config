@@ -94,8 +94,10 @@
                 <value>1.10.2</value>
 
                 <apply close="true">
-                  <comment src="project/sponge/github/close/unsupported_version.md">
+                  <comment src="global/github/issue/close/unsupported_version_ended_on.md">
                     <tokens>
+                      <token name="new_issue_path" value="new"/>
+                      <token name="reproduce_on" value="Minecraft 1.12"/>
                       <token name="version" value="1.10"/>
                       <token name="version_end" value="in January 2018"/>
                     </tokens>
@@ -113,8 +115,10 @@
                 <value>1.11.2</value>
 
                 <apply close="true">
-                  <comment src="project/sponge/github/close/unsupported_version.md">
+                  <comment src="global/github/issue/close/unsupported_version_ended_on.md">
                     <tokens>
+                      <token name="new_issue_path" value="new"/>
+                      <token name="reproduce_on" value="Minecraft 1.12"/>
                       <token name="version" value="1.11"/>
                       <token name="version_end" value="in January 2018"/>
                     </tokens>
