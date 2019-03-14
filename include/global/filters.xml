@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <limbo>
   <filters>
-    <!-- create filters for repositories -->
-    <repository id="mcpbot-issues">
-      <ref id="mcpbot-issues"/>
-    </repository>
-    <repository id="ore">
-      <ref id="ore"/>
-    </repository>
-    <repository id="paper">
-      <ref id="paper"/>
-    </repository>
-    <repository id="spongeapi">
-      <ref id="spongeapi"/>
-    </repository>
-    <repository id="spongecommon">
-      <ref id="spongecommon"/>
-    </repository>
-    <repository id="spongeforge">
-      <ref id="spongeforge"/>
-    </repository>
-    <repository id="spongevanilla">
-      <ref id="spongevanilla"/>
-    </repository>
-
     <!-- pull request comment/open/review by author/collaborator-->
     <all id="pr-cor-ac">
       <any>

@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <limbo>
-  <include src="filters.xml"/>
-  <include src="repositories.xml"/>
+  <!-- Global -->
+  <include src="global/filters.xml"/>
+  <include src="global/discord/issue_ref.xml"/>
+  <include src="global/github/actions.xml"/>
 
-  <include src="discord/auto_role.xml"/>
-  <include src="discord/issue_ref.xml"/>
-  <include src="discord/role_ping.xml"/>
-  <include src="discord/role_react.xml"/>
+  <!-- ModCoderPack -->
+  <include src="project/modcoderpack/filters.xml"/>
+  <include src="project/modcoderpack/repositories.xml"/>
 
-  <include src="github/actions.xml"/>
-  <include src="github/apply.xml"/>
-  <include src="github/move.xml"/>
+  <!-- PaperMC -->
+  <include src="project/paper/filters.xml"/>
+  <include src="project/paper/repositories.xml"/>
+  <include src="project/paper/discord/auto_role.xml"/>
+
+  <!-- SpongePowered -->
+  <include src="project/sponge/filters.xml"/>
+  <include src="project/sponge/repositories.xml"/>
+  <include src="project/sponge/discord/role_ping.xml"/>
+  <include src="project/sponge/discord/role_react.xml"/>
+  <include src="project/sponge/github/apply.xml"/>
+  <include src="project/sponge/github/move.xml"/>
 </limbo>
