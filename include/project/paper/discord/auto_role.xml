@@ -13,6 +13,15 @@
         <role>505873650067570688</role> <!-- 🔥 -->
         <role>523797688337039380</role> <!-- dumb-taco-hater -->
       </auto-role>
+      <auto-role>
+        <filter>
+          <all>
+            <guild>289587909051416579</guild> <!-- PaperMC -->
+            <user>121476000046514178</user> <!-- TehBrian#6219 -->
+          </all>
+        </filter>
+        <role>497836299097473039</role> <!-- no-reactions -->
+      </auto-role>
     </auto-roles>
   </discord>
 </limbo>
