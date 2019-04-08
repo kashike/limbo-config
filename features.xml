@@ -17,6 +17,7 @@
   <!-- SpongePowered -->
   <include src="project/sponge/filters.xml"/>
   <include src="project/sponge/repositories.xml"/>
+  <include src="project/sponge/discord/auto_role.xml"/>
   <include src="project/sponge/discord/role_ping.xml"/>
   <include src="project/sponge/discord/role_react.xml"/>
   <include src="project/sponge/github/apply.xml"/>
