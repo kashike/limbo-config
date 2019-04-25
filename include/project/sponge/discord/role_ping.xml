@@ -19,6 +19,8 @@
       </role-ping>
 
       <role-ping>
+        <id>dev</id>
+        <id>devs</id>
         <id>developer</id>
         <id>developers</id>
 
@@ -84,6 +86,8 @@
       </role-ping>
 
       <role-ping>
+        <id>ore-dev</id>
+        <id>ore-devs</id>
         <id>ore-developer</id>
         <id>ore-developers</id>
 
