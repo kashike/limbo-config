@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <repositories user="mcMMO-Dev">
+    <repository id="mcmmo" repo="mcMMO">
+      <tag>mcmmo</tag>
+    </repository>
+  </repositories>
+</limbo>

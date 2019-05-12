@@ -4,6 +4,7 @@
     <github-issue-ref>
       <search pattern="~([a-zA-Z0-9]{1,})-([0-9]{1,})">
         <repositories>
+          <repository id="mcmmo"/>
           <repository id="mcpbot-issues"/>
           <repository id="paper"/>
           <repository id="spongeapi"/>

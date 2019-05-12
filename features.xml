@@ -5,6 +5,10 @@
   <include src="global/discord/issue_ref.xml"/>
   <include src="global/github/actions.xml"/>
 
+  <!-- mcMMO -->
+  <include src="project/mcmmo/filters.xml"/>
+  <include src="project/mcmmo/repositories.xml"/>
+
   <!-- ModCoderPack -->
   <include src="project/modcoderpack/filters.xml"/>
   <include src="project/modcoderpack/repositories.xml"/>
