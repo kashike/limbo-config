@@ -24,6 +24,15 @@
         <role>523797688337039380</role> <!-- dumb-taco-hater -->
         <role>497836299097473039</role> <!-- no-reactions -->
       </auto-role>
+      <auto-role>
+        <filter>
+          <all>
+            <guild>289587909051416579</guild> <!-- PaperMC -->
+            <user>247853925753946113</user> <!-- simple#0001 -->
+          </all>
+        </filter>
+        <role>642983329129299981</role> <!-- old prune -->
+      </auto-role>
     </auto-roles>
   </discord>
 </limbo>
