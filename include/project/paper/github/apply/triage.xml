@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <trigger>
+    <filter id="is-o-ns"/>
+
+    <action>
+      <label>
+        <add>status: needs triage</add>
+      </label>
+    </action>
+  </trigger>
+
+  <trigger>
+    <filter>
+      <any>
+        <!-- auto-remove the triage label when someone, other than the bot, applies labels -->
+        <all>
+          <filter id="not-self"/>
+          <any>
+            <event>issue label</event>
+            <event>pull request label</event>
+          </any>
+          <not>
+            <label context="new">status: needs triage</label>
+          </not>
+        </all>
+        <!-- auto-remove the triage label when a close happens -->
+        <all>
+          <any>
+            <event>issue close</event>
+            <event>pull request close</event>
+          </any>
+        </all>
+      </any>
+    </filter>
+
+    <action>
+      <label>
+        <remove>status: needs triage</remove>
+      </label>
+    </action>
+  </trigger>
+</limbo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <command command="@limbo-app ready">
+    <filter>
+      <all>
+        <filter id="not-self"/>
+        <filter id="open-or-comment"/>
+        <filter id="pr-cr-c"/>
+        <previous-approver-is-member-of-team>paper-core</previous-approver-is-member-of-team>
+      </all>
+    </filter>
+
+    <action>
+      <approval>approve</approval>
+      <approval-comment>
+        <value>Pull request automatically approved for merging - a core team member has previously approved this pull request.</value>
+      </approval-comment>
+    </action>
+  </command>
+</limbo>

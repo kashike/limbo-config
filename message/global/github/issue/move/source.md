@@ -1,0 +1,1 @@
+Hey @${author}! I've moved your issue to [${target}#${target_id}](${target_url}).

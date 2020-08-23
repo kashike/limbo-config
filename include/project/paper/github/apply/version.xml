@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <pattern type="where" pattern="git-(.*)-([0-9]*) \(MC: ([0-9.]*)\) \(Implementing API version ([R0-9.-]*)-SNAPSHOT\)">
+    <filter id="is-o-ns"/>
+
+    <where group="3">
+      <match>
+        <value>1.8</value>
+        <value>1.8.1</value>
+        <value>1.8.2</value>
+        <value>1.8.3</value>
+        <value>1.8.4</value>
+        <value>1.8.5</value>
+        <value>1.8.6</value>
+        <value>1.8.7</value>
+        <value>1.8.8</value>
+        <value>1.8.9</value>
+
+        <apply close="true">
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.8"/>
+            </tokens>
+          </comment>
+          <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
+            <add>version: 1.8</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.9</value>
+        <value>1.9.1</value>
+        <value>1.9.2</value>
+        <value>1.9.3</value>
+        <value>1.9.4</value>
+
+        <apply close="true">
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.9"/>
+            </tokens>
+          </comment>
+          <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
+            <add>version: 1.9</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.10</value>
+        <value>1.10.1</value>
+        <value>1.10.2</value>
+
+        <apply close="true">
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.10"/>
+            </tokens>
+          </comment>
+          <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
+            <add>version: 1.10</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.11</value>
+        <value>1.11.1</value>
+        <value>1.11.2</value>
+
+        <apply close="true">
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.11"/>
+            </tokens>
+          </comment>
+          <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
+            <add>version: 1.11</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.12</value>
+        <value>1.12.1</value>
+        <value>1.12.2</value>
+
+        <apply close="true">
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.12"/>
+            </tokens>
+          </comment>
+          <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
+            <add>version: 1.12</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.13</value>
+        <value>1.13.1</value>
+        <value>1.13.2</value>
+
+        <apply close="true">
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.13"/>
+            </tokens>
+          </comment>
+          <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
+            <add>version: 1.13</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.14</value>
+        <value>1.14.1</value>
+        <value>1.14.2</value>
+        <value>1.14.3</value>
+        <value>1.14.4</value>
+
+        <apply close="true">
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.14"/>
+            </tokens>
+          </comment>
+          <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
+            <add>version: 1.14</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.15</value>
+        <value>1.15.1</value>
+        <value>1.15.2</value>
+
+        <apply>
+          <label>
+            <add>version: 1.15</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.16</value>
+        <value>1.16.1</value>
+        <value>1.16.2</value>
+
+        <apply>
+          <label>
+            <add>version: 1.16</add>
+          </label>
+        </apply>
+      </match>
+    </where>
+  </pattern>
+</limbo>

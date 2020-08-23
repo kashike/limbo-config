@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <!-- Global -->
+  <include src="global/filters.xml"/>
+
+  <!-- PaperMC -->
+  <include src="project/paper/filters.xml"/>
+  <include src="project/paper/repositories.xml"/>
+  <include src="project/paper/github/apply.xml"/>
+</limbo>

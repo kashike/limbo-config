@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <github>
+    <apply>
+      <apply>
+        <filter>
+          <any>
+            <ref id="paper"/>
+          </any>
+        </filter>
+
+        <actions>
+          <include src="project/paper/github/apply/approval.xml"/>
+          <include src="project/paper/github/apply/triage.xml"/>
+          <include src="project/paper/github/apply/version.xml"/>
+        </actions>
+      </apply>
+    </apply>
+  </github>
+</limbo>

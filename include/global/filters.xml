@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <filters>
+    <any id="open-or-comment">
+      <event>issue comment</event>
+      <event>issue open</event>
+      <event>pull request comment</event>
+      <event>pull request open</event>
+    </any>
+
+    <!-- pull request comment/open/review by author/collaborator-->
+    <all id="pr-cor-ac">
+      <any>
+        <actor>author</actor>
+        <actor>collaborator</actor>
+      </any>
+      <any>
+        <event>pull request comment</event>
+        <event>pull request open</event>
+        <event>pull request review submitted</event>
+      </any>
+    </all>
+
+    <!-- pull request comment/review by collaborator-->
+    <all id="pr-cr-c">
+      <actor>collaborator</actor>
+      <any>
+        <event>pull request comment</event>
+        <event>pull request review submitted</event>
+      </any>
+    </all>
+
+    <event id="is-o">issue open</event>
+    <event id="pr-o">pull request open</event>
+
+    <!-- self (bot) actor -->
+    <actor id="is-self">self</actor>
+    <not id="not-self">
+      <ref id="is-self"/>
+    </not>
+
+    <!-- issue open by anyone but self -->
+    <all id="is-o-ns">
+      <ref id="is-o"/>
+      <ref id="not-self"/>
+    </all>
+    <!-- pull request open by anyone but self -->
+    <all id="pr-o-ns">
+      <ref id="pr-o"/>
+      <ref id="not-self"/>
+    </all>
+  </filters>
+</limbo>
