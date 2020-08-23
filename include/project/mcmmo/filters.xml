@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<limbo>
-  <filters>
-    <repository id="mcmmo">
-      <ref id="mcmmo"/>
-    </repository>
-  </filters>
-</limbo>

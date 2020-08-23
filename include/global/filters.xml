@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <limbo>
   <filters>
+    <any id="open-or-comment">
+      <event>issue comment</event>
+      <event>issue open</event>
+      <event>pull request comment</event>
+      <event>pull request open</event>
+    </any>
+
     <!-- pull request comment/open/review by author/collaborator-->
     <all id="pr-cor-ac">
       <any>

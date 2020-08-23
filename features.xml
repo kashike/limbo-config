@@ -2,28 +2,9 @@
 <limbo>
   <!-- Global -->
   <include src="global/filters.xml"/>
-  <include src="global/discord/issue_ref.xml"/>
-  <include src="global/github/actions.xml"/>
-
-  <!-- mcMMO -->
-  <include src="project/mcmmo/filters.xml"/>
-  <include src="project/mcmmo/repositories.xml"/>
-
-  <!-- ModCoderPack -->
-  <include src="project/modcoderpack/filters.xml"/>
-  <include src="project/modcoderpack/repositories.xml"/>
 
   <!-- PaperMC -->
   <include src="project/paper/filters.xml"/>
   <include src="project/paper/repositories.xml"/>
-  <include src="project/paper/discord/auto_role.xml"/>
-
-  <!-- SpongePowered -->
-  <include src="project/sponge/filters.xml"/>
-  <include src="project/sponge/repositories.xml"/>
-  <include src="project/sponge/discord/auto_role.xml"/>
-  <include src="project/sponge/discord/role_ping.xml"/>
-  <include src="project/sponge/discord/role_react.xml"/>
-  <include src="project/sponge/github/apply.xml"/>
-  <include src="project/sponge/github/move.xml"/>
+  <include src="project/paper/github/apply.xml"/>
 </limbo>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <pattern type="where" pattern="git-(.*)-([0-9]*) \(MC: ([0-9.]*)\) \(Implementing API version ([R0-9.-]*)-SNAPSHOT\)">
+    <filter id="is-o-ns"/>
+
+    <where group="3">
+      <match>
+        <value>1.12</value>
+        <value>1.12.1</value>
+        <value>1.12.2</value>
+
+        <apply close="true">
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.12"/>
+            </tokens>
+          </comment>
+          <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
+            <add>version: 1.12</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.13</value>
+        <value>1.13.1</value>
+        <value>1.13.2</value>
+
+        <apply close="true">
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.13"/>
+            </tokens>
+          </comment>
+          <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
+            <add>version: 1.13</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.14</value>
+        <value>1.14.1</value>
+        <value>1.14.2</value>
+        <value>1.14.3</value>
+        <value>1.14.4</value>
+
+        <apply close="true">
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.14"/>
+            </tokens>
+          </comment>
+          <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
+            <add>version: 1.14</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.15</value>
+        <value>1.15.1</value>
+        <value>1.15.2</value>
+
+        <apply close="true">
+          <label>
+            <add>version: 1.15</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value>1.16</value>
+        <value>1.16.1</value>
+        <value>1.16.2</value>
+
+        <apply>
+          <label>
+            <add>version: 1.16</add>
+          </label>
+        </apply>
+      </match>
+    </where>
+  </pattern>
+</limbo>
