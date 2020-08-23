@@ -13,7 +13,7 @@
     <action>
       <approval>approve</approval>
       <approval-comment>
-        <value>Pull request automatically approved for merging - a core member has previously approved this pull request.</value>
+        <value>Pull request automatically approved for merging - a core team member has previously approved this pull request.</value>
       </approval-comment>
     </action>
   </command>
