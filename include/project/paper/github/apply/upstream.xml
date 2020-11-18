@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <pattern type="where" pattern="Updated Upstream \((.*)\)" scope="title">
+    <filter id="pr-o"/>
+
+    <where group="1">
+      <match>
+        <value contains="true">Bukkit</value>
+        <value contains="true">CraftBukkit</value>
+
+        <apply>
+          <label>
+            <add>upstream: bukkit</add>
+          </label>
+        </apply>
+      </match>
+
+      <match>
+        <value contains="true">Spigot</value>
+
+        <apply>
+          <label>
+            <add>upstream: spigot</add>
+          </label>
+        </apply>
+      </match>
+    </where>
+  </pattern>
+</limbo>

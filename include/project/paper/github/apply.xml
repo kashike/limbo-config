@@ -12,6 +12,7 @@
         <actions>
           <include src="project/paper/github/apply/approval.xml"/>
           <include src="project/paper/github/apply/triage.xml"/>
+          <include src="project/paper/github/apply/upstream.xml"/>
           <include src="project/paper/github/apply/version.xml"/>
         </actions>
       </apply>
