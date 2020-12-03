@@ -12,7 +12,6 @@
 
         <actions>
           <include src="project/sponge/github/apply/triage.xml"/>
-          <include src="project/sponge/github/apply/version.xml"/>
         </actions>
       </apply>
     </apply>
