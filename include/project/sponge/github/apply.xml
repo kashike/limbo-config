@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <github>
+    <apply>
+      <apply>
+        <filter>
+          <any>
+            <ref id="spongeapi"/>
+            <ref id="sponge"/>
+          </any>
+        </filter>
+
+        <actions>
+          <include src="project/sponge/github/apply/triage.xml"/>
+          <include src="project/sponge/github/apply/version.xml"/>
+        </actions>
+      </apply>
+    </apply>
+  </github>
+</limbo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<limbo>
+  <repositories user="SpongePowered">
+    <repository id="spongeapi" repo="SpongeAPI">
+      <tag>spongeapi</tag>
+    </repository>
+    <repository id="sponge" repo="Sponge">
+      <tag>sponge</tag>
+    </repository>
+  </repositories>
+</limbo>

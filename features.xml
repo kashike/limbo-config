@@ -7,4 +7,9 @@
   <include src="project/paper/filters.xml"/>
   <include src="project/paper/repositories.xml"/>
   <include src="project/paper/github/apply.xml"/>
+
+  <!-- SpongePowered -->
+  <include src="project/sponge/filters.xml"/>
+  <include src="project/sponge/repositories.xml"/>
+  <include src="project/sponge/github/apply.xml"/>
 </limbo>
