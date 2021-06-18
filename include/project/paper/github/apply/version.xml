@@ -188,6 +188,16 @@
           </label>
         </apply>
       </match>
+
+      <match>
+        <value>1.17</value>
+
+        <apply>
+          <label>
+            <add>version: 1.17</add>
+          </label>
+        </apply>
+      </match>
     </where>
   </pattern>
 </limbo>
