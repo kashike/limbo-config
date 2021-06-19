@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <limbo>
-  <pattern type="where" pattern="git-(.*)-([0-9]*) \(MC: ([0-9.]*)\) \(Implementing API version ([R0-9.-]*)-SNAPSHOT\)">
+  <pattern type="where" pattern="git-(.*)-([0-9&quot;a-z]*) \(MC: ([0-9.]*)\) \(Implementing API version ([R0-9.-]*)-SNAPSHOT\)">
     <filter id="is-o-ns"/>
 
     <where group="3">
