@@ -168,7 +168,16 @@
         <value>1.15.2</value>
 
         <apply>
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.15"/>
+            </tokens>
+          </comment>
           <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
             <add>version: 1.15</add>
           </label>
         </apply>
@@ -191,6 +200,7 @@
 
       <match>
         <value>1.17</value>
+        <value>1.17.1</value>
 
         <apply>
           <label>
