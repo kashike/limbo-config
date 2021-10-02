@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <limbo>
   <trigger>
-    <filter id="is-o-ns"/>
-
-    <action>
-      <label>
-        <add>status: needs triage</add>
-      </label>
-    </action>
-  </trigger>
-
-  <trigger>
     <filter>
       <any>
         <!-- auto-remove the triage label when someone, other than the bot, applies labels -->
