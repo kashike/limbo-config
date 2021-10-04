@@ -31,13 +31,27 @@
     </all>
 
     <event id="is-o">issue open</event>
+    <event id="is-l">issue label</event>
     <event id="pr-o">pull request open</event>
+
+    <!-- author actor -->
+    <actor id="is-author">author</actor>
+    <not id="not-author">
+      <ref id="is-author">
+    </not>
 
     <!-- self (bot) actor -->
     <actor id="is-self">self</actor>
     <not id="not-self">
       <ref id="is-self"/>
     </not>
+
+    <!-- issue label by not author and not self -->
+    <all id="is-l-ns-na">
+      <ref id="is-l"/>
+      <ref id="not-self"/>
+      <ref id="not-author">
+    </all>
 
     <!-- issue open by anyone but self -->
     <all id="is-o-ns">

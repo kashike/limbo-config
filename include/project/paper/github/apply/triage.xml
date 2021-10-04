@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <limbo>
+  <!-- auto-remove triage label when an issue is labeled by not self and not author-->
   <trigger>
-    <filter id="is-o-ns"/>
-
+    <filter id="is-l-ns-na"/>
     <action>
       <label>
-        <add>status: needs triage</add>
+        <remove>status: needs triage</remove>
       </label>
     </action>
   </trigger>
@@ -17,7 +17,6 @@
         <all>
           <filter id="not-self"/>
           <any>
-            <event>issue label</event>
             <event>pull request label</event>
           </any>
           <not>
