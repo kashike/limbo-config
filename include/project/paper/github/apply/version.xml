@@ -192,7 +192,16 @@
         <value>1.16.5</value>
 
         <apply>
+          <comment src="global/github/issue/close/unsupported_version.md">
+            <tokens>
+              <token name="new_issue_path" value="new"/>
+              <token name="reproduce_on" value="the latest supported version"/>
+              <token name="version" value="1.16"/>
+            </tokens>
+          </comment>
           <label>
+            <add>resolution: unsupported</add>
+            <remove>status: needs triage</remove>
             <add>version: 1.16</add>
           </label>
         </apply>
